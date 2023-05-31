@@ -14,46 +14,61 @@
 
 <body>
     <header class="header container-fluid ">
-        <div class="row">
-            <div class="col-lg-7">
-                <div class="titulo">
-                    <h> Hi from Nicolas,</h 1>
-                    <p> Frontend Developer</p>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <p>1+ 6 projects</p>
-                    <p>Experience </p>
+
+        <div class=" divnavbar">
+            <nav>
+
+                <ul class="navbar">
+                    <li> <a href="#">About</a> </li>
+                    <li> <a href="#" id="resume">Resume</a> </li>
+                    <li> <a href="#" id="services">Services</a> </li>
+                    <li> <a href="#">Portfolio</a> </li>
+                    <li> <a href="#">Contact</a> </li>
+
+
+                </ul>
+
+            </nav>
+
+        </div>
+        <a class="ham" href="#"><i class="bi bi-list"></i></a>
+        <div class="probando">
+            <div class="titulo">
+                <h1> Hi from Nicolas,</h1>
+                <p> Frontend Developer</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>1+ 6 projects</p>
+                <p>Experience </p>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body d-flex card-titulo">
+                    <h5 class="card-title">Nicolas Haddad</h5> <span>Frontend Developer</span>
                 </div>
-            </div>
-            <div class="col-lg-3">
-                <section class="card ">
-                    <div class="personal__card">
-                        <h2>Nicolas</h2>
-                        <p>Frontend Developer</p>
-                        <img src="perfil2.jpg" alt="">
-                        <div>
-                            <p>Nicolasmartinhaddad@gmail.com.</p>
-                            <p> Buenos Aires - Capital</p>
-                            <p>2023 Nicolas All rights reserved</p>
-                        </div>
-                        <div class="social-icons">
-                            <i class="bi bi-instagram"></i>
-                            <i class="bi bi-github"></i>
-                            <i class="bi bi-whatsapp"></i>
-                        </div>
-                        <button class="btn">Hire me!</button>
-                </section>
-            </div>
-            <div class="col">
-                <div class="hamburger-menu ">
-                    <ul>
-                        <li><a href="#"><i class="bi bi-house"></i></a></li>
-                        <li><a href="#"><i class="bi bi-person"></i></a></li>
-                        <li><a href="#"><i class="bi bi-card-list"></i></a></li>
-                        <li><a href="#"><i class="bi bi-diagram-3"></i></a></li>
-                        <li><a href="#"><i class="bi bi-code"></i></a></li>
-                        <li><a href="#"><i class="bi bi-briefcase-fill"></i></a></li>
-                        <li><a href="#"><i class="bi bi-inbox"></i></a></li>
-                    </ul>
+                <img src="perfil2.jpg" class="card-img-top rounded   " alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Nicolasmartinhaddad@gmail.com</h5>
+                    <p class="card-text">Buenos Aires, Argentina. <span>&copy; 2023 Nicolas.</span></p>
+
+                </div>
+
+                <ul class="social-profile d-flex align-items-center flex-wrap justify-content-center">
+                    <li>
+                        <a target="_blank" href="https://www.instagram.com/nico.saphe/"><i
+                                class="bi bi-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://github.com/NicoH91"><i class="bi bi-github"></i></a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/nicolas-haddad-10382a242/"><i
+                                class="bi bi-linkedin"></i></a>
+                    </li>
+
+
+                </ul><br><br>
+
+                <div class="card-body">
+                    <button class="btn"> <i class="bi bi-inbox"></i> Message me</button>
                 </div>
             </div>
 
@@ -63,7 +78,7 @@
     <main>
         <!-- seccion about -->
 
-        <section class="about-area page-section scroll-to-page container" id="about">
+        <section class="about-area page-section  container" id="about">
             <div>
                 <div class="about-content">
                     <div class="section-header">
@@ -71,20 +86,22 @@
                             <i class="bi bi-person"></i> About
                         </h4>
                         <h1 class="skill-header">Every great design begin with<br>
-                            an even <span>better story</span></h1>
+                            an even better story</h1>
                     </div>
-                    <p class="skill-header">Since beginning my journey as a
-                        freelance designer nearly 8 years ago,
-                        I've done remote work for agencies, consulted for startups, and collaborated with
-                        talented people to create digital products for both business and consumer use.
-                        I'm quietly confident, naturally curious, and perpetually working on improving my
-                        chopsone design problem at a time.</p>
+                    <div class="p">
+                        <p class="skill-header ">Since beginning my journey as a
+                            freelance designer nearly 8 years ago,
+                            I've done remote work for agencies, consulted for startups, and collaborated with
+                            talented people to create digital products for both business and consumer use.
+                            I'm quietly confident, naturally curious, and perpetually working on improving my
+                            chopsone design problem at a time.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
 
-        <section class="resume-area page-section scroll-to-page container" id="resume">
+        <section class="resume-area page-section  container" id="resume">
             <div>
                 <div class="resume-content content-width">
                     <div class="section-header">
@@ -207,7 +224,33 @@
                                 <p class="name">C#</p>
                             </div>
                         </div>
+                        <div class="col-md-3 scroll-animation" data-animation="fade_from_left">
+                            <div class="skill">
+                                <div class="skill-inner">
+                                    <img src="svg/js.png" alt="C#">
 
+                                </div>
+                                <p class="name">Javascript</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 scroll-animation" data-animation="fade_from_left">
+                            <div class="skill">
+                                <div class="skill-inner">
+                                    <img src="svg/leadership.png" alt="C#">
+
+                                </div>
+                                <p class="name">Leadership</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 scroll-animation" data-animation="fade_from_left">
+                            <div class="skill">
+                                <div class="skill-inner">
+                                    <img src="svg/partners.png" alt="C#">
+
+                                </div>
+                                <p class="name">Team player</p>
+                            </div>
+                        </div>
 
                     </div>
                 </div>
@@ -217,12 +260,12 @@
 
         <section class="portfolio-area page-section scroll-to-page container" id="portfolio">
             <div>
-                <div class="portfolio-content content-width">
+                <div class="portfolio-content">
                     <div class="section-header">
                         <h4 class="skill-i">
                             <i class="bi bi-briefcase"></i> portfolio
                         </h4>
-                        <h1 >Featured <span>Projects</span>
+                        <h1>Featured <span>Projects</span>
                         </h1>
                     </div>
 
@@ -230,28 +273,30 @@
                         <div class="col-md-12 scroll-animation" data-animation="fade_from_bottom">
                             <div class="portfolio-item portfolio-full">
                                 <div class="portfolio-item-inner">
-                                    <a target="_blank" href="https://nicoh91.github.io/Alesund/" data-lightbox="example-1">
+                                    <a target="_blank" href="https://nicoh91.github.io/Alesund/"
+                                        data-lightbox="example-1">
                                         <img src="img/folder.png" alt="Portfolio">
                                     </a>
 
                                     <ul class="portfolio-categories">
                                         <li>
-                                            <a href="">HTML</a>
+                                            <a href="#">HTML</a>
                                         </li>
                                         <li>
-                                            <a href="">CSS</a>
+                                            <a href="#">CSS</a>
                                         </li>
-                                       
+
                                     </ul>
                                 </div>
-                                <h2>Taskly Dashboard</h2>
+                                <h2>Your dream city</h2>
                             </div>
                         </div>
 
                         <div class="col-md-6 scroll-animation" data-animation="fade_from_left">
                             <div class="portfolio-item portfolio-half">
                                 <div class="portfolio-item-inner">
-                                    <a target="_blank" href="https://proyecto-coder-house-kx7evybds-nicoh91.vercel.app" data-lightbox="example-1">
+                                    <a target="_blank" href="https://proyecto-coder-house-kx7evybds-nicoh91.vercel.app"
+                                        data-lightbox="example-1">
                                         <img src="img/folder4.png" alt="Portfolio">
                                     </a>
 
@@ -259,74 +304,78 @@
 
                                     <ul class="portfolio-categories">
                                         <li>
-                                            <a href="">HTML</a>
+                                            <a href="#">HTML</a>
                                         </li>
                                         <li>
-                                            <a href="">SCSS</a>
+                                            <a href="#">SCSS</a>
                                         </li>
                                     </ul>
                                 </div>
-                               
+                                <h2>E-commerce Padel Tour</h2>
                             </div>
                         </div>
 
                         <div class="col-md-6 scroll-animation" data-animation="fade_from_right">
                             <div class="portfolio-item portfolio-half">
                                 <div class="portfolio-item-inner">
-                                    <a target="_blank" href="./assets/images/portfolio3.jpg" data-lightbox="example-1">
+                                    <a target="_blank" href="https://nicoh91.github.io/landingpage/" data-lightbox="example-1">
                                         <img src="img/folder2.png" alt="Portfolio">
                                     </a>
 
                                     <ul class="portfolio-categories">
                                         <li>
-                                            <a href="">HTML</a>
+                                            <a href="#">HTML</a>
                                         </li>
                                         <li>
-                                            <a href="">CSS</a>
+                                            <a href="#">CSS</a>
                                         </li>
                                     </ul>
                                 </div>
-                                <h2>Taskly Dashboard</h2>
+                                <h2>Front page #1</h2>
                             </div>
                         </div>
 
                         <div class="col-md-12 scroll-animation" data-animation="fade_from_bottom">
                             <div class="portfolio-item portfolio-half">
                                 <div class="portfolio-item-inner">
-                                    <a target="_blank" href="https://glampingrental.netlify.app" data-lightbox="example-1">
+                                    <a target="_blank" href="https://glampingrental.netlify.app"
+                                        data-lightbox="example-1">
                                         <img src="img/folder3.png" alt="Portfolio">
                                     </a>
 
                                     <ul class="portfolio-categories">
                                         <li>
-                                            <a href="">HTML</a>
+                                            <a href="#">HTML</a>
                                         </li>
                                         <li>
-                                            <a href="">SCSS</a>
+                                            <a href="#">SCSS</a>
                                         </li>
                                     </ul>
                                 </div>
-                                <h2>Hinterland - Real Estate Site Redesign</h2>
+                                <h2>
+                                    Glamping rental
+                                </h2>
                             </div>
                         </div>
 
                         <div class="col-md-12 scroll-animation" data-animation="fade_from_bottom">
                             <div class="portfolio-item portfolio-half">
                                 <div class="portfolio-item-inner">
-                                    <a target="_blank" href="https://nicoh91.github.io/SaphenousLandingpage/" data-lightbox="example-1">
+                                    <a target="_blank" href="https://nicoh91.github.io/SaphenousLandingpage/"
+                                        data-lightbox="example-1">
                                         <img src="img/folder5.png" alt="Portfolio">
                                     </a>
 
                                     <ul class="portfolio-categories">
                                         <li>
-                                            <a href="">HTML</a>
+                                            <a href="#">HTML</a>
                                         </li>
                                         <li>
-                                            <a href="">CSS</a>
+                                            <a href="#">CSS</a>
                                         </li>
                                     </ul>
                                 </div>
-                                <h2>Lewis Portfolio Framer Template</h2>
+                                <h2>Front page #2 </h2>
                             </div>
                         </div>
                     </div>
@@ -335,44 +384,6 @@
             </div>
         </section>
 
-        <section class="contact container">
-            <div>
-                <p> Contact<i class="bi bi-inbox"></i></p>
-                <h2>lets work Together</h2>
-                <p>Nicolasmartinhaddad@gmail.com</p>
-            </div>
-
-            <div>
-                <form action="">
-
-                    <div>
-                        <label for="full-name">full Name <sup>*</sup></label>
-                        <input type="text" name="full-name" id="full-name" placeholder="Your Full Name">
-                    </div>
-                    <div>
-                        <label for="email">Email <sup>*</sup></label>
-                        <input type="email" name="email" id="email" placeholder="Your email adress">
-                    </div>
-                    <div>
-                        <label for="phone-number">phone <span>(optional)</span></label>
-                        <input type="text" name="phone-number" id="phone-number" placeholder="Your number phone">
-                    </div>
-
-                    <div class="input-group">
-                        <label for="message">message</label>
-                        <textarea name="message" id="message" placeholder="Wrire your message here ..."></textarea>
-                    </div>
-                    <div>
-                        <label for="upload-attachment">
-                            <i class="las la-cloud-upload-alt"></i> add an attachment
-                            <input type="file" name="file" id="upload-attachment">
-                        </label>
-                    </div>
-
-                </form>
-
-            </div>
-        </section>
 
     </main>
 </body>

@@ -13,71 +13,104 @@ ul li {
     list-style: none;
 }
 
+h5 {
+    width: 100%;
+    font-size: 1rem;
+}
+
+body {
+    background-color: black;
+    color: whitesmoke;
+}
 
 /* ################################################ */
 /* seccion card */
+@media (max-width:680px) {
+    .divnavbar {
+        display: none;
+
+    }
+
+    .ham {
+        position: fixed;
+        right: 0;
+        z-index: 1030;
+    }
+
+    .card {
+        display: none;
+    }
+}
+
+.navbar a{
+    color:  #28e98c;
+}
+
+.divnavbar {
+    width: 40%;
+    padding-bottom: 2rem;
+    position: fixed;
+    right: 0;
+    z-index: 1030;
+}
+
+.divnavbar .navbar {
+    display: flex;
+    justify-content: space-evenly;
 
 
 
 
-
+}
 
 .card {
-    display: flex;
-    align-items: center;
 
+    background-color: rgb(11, 11, 11);
+    color: white;
+    border-color: rgba(245, 245, 245, 0.305);
+
+}
+
+.card-titulo {
+    display: flex;
+    width: fit-content;
+    align-items: baseline;
+    margin: 0 auto;
+
+}
+
+.ham {
+    display: none;
+    display: flex;
+    justify-content: end;
+   color:  #28e98c;
+   position: fixed;
+   right: 0;
+   z-index: 1030;
+}
+
+.probando {
+    display: flex;
+}
+
+.card {
+
+    position: fixed;
 
     padding: 20px;
 }
 
-.personal__card {
-    flex: 0 0 15%;
-    /* margin-right: 20rem; */
-    background-color: #0e0d0d;
-    color: white;
-    border-radius: 10%;
-    padding-bottom: 2rem;
-}
 
-.personal__card h2 {
-    text-align: center;
-    margin-bottom: 10px;
 
-}
 
-.personal__card p {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.personal__card img {
-    display: block;
-    margin: 0 auto;
-    width: 150px;
-    height: 150px;
-    border-radius: 20%;
-    object-fit: cover;
-    margin-bottom: 20px;
-}
-
-.personal__card div {
-    text-align: center;
-    margin-bottom: 20px;
-    width: 100%;
-}
-
-.personal__card i {
-    display: inline-block;
-    margin-right: 10px;
-}
 
 .btn {
     display: block;
     width: 100%;
     max-width: 200px;
     margin: 0 auto;
-    background-color: #007bff;
-    color: #fff;
+    background-color: #28e98c;
+    color: black;
     border: none;
     padding: 10px 20px;
     font-size: 16px;
@@ -91,7 +124,8 @@ ul li {
 
 .titulo {
     text-align: center;
-
+    margin-bottom: 5rem;
+    position: relative;
     flex: 1;
     /* margin-right: 10rem; */
     font-size: 2rem;
@@ -99,11 +133,28 @@ ul li {
 
 }
 
-.hamburger-menu {
-    /* margin-left: 6rem; */
-    border: solid black;
-    width: min-content;
-    border-radius: 10%;
+.social-profile {
+    margin-right: 2rem;
+    gap: 1rem;
+}
+
+.social-profile a {
+    color: white;
+}
+
+.social-profile li {
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    line-height: 46px;
+    text-align: center;
+    border: 2px solid #565656;
+    border-radius: 50%;
+    color: #999999;
+    font-size: 20px;
+    transition: .3s;
+
 }
 
 /* seccion del titulo */
@@ -115,12 +166,18 @@ ul li {
 .about-area {
     padding-top: 90px;
     padding-bottom: 90px;
-
+    margin: 0 auto;
 }
 
 .about-area .about-content p {
     line-height: 30px;
     max-width: 610px;
+
+}
+
+.p {
+    display: flex;
+    justify-content: center;
     text-align: center;
 }
 
@@ -135,7 +192,7 @@ ul li {
     padding-bottom: 90px;
     display: flex;
     justify-content: center;
-    color: black;
+    color: #ffffff;
 }
 
 .resume-area .resume-content .resume-timeline .item {
@@ -154,7 +211,7 @@ ul li {
 
 .resume-area .resume-content .resume-timeline .item::after {
     content: '';
-    background: #0f0f0f;
+    background: #fafafa;
     width: 1px;
     height: 100%;
     position: absolute;
@@ -168,7 +225,7 @@ ul li {
     position: absolute;
     width: 12px;
     height: 12px;
-    background: #f60000;
+    background: #ffffff;
     border-radius: 50%;
     left: -6px;
     top: 7px;
@@ -185,17 +242,17 @@ ul li {
     font-size: 24px;
     font-weight: 300;
     margin-bottom: 5px;
-    color: #020202;
+    color: #ffffff;
 }
 
 .resume-area .resume-content .resume-timeline .item h2 a {
-    color: #000000;
+    color: #ffffff;
     display: block;
 }
 
 .resume-area .resume-content .resume-timeline .item p {
     font-size: 13px;
-    color: #000000;
+    color: #fef9f9;
     margin-bottom: 18px;
 }
 
@@ -223,7 +280,7 @@ ul li {
 }
 
 .services-items .service-item {
-    border: 1px solid #565656;
+    border: 1px solid #fff;
     border-radius: 20px;
     transition: .3s;
     position: relative;
@@ -239,11 +296,11 @@ ul li {
     font-size: 24px;
     font-weight: 300;
     margin-bottom: 8px;
-    color: #050505;
+    color: whitesmoke;
 }
 
 .services-items .service-item h2 a {
-    color: #000000;
+    color: whitesmoke;
     transition: .3s;
 }
 
@@ -252,13 +309,13 @@ ul li {
 
 .services-items .service-item p {
     font-size: 14px;
-    color: #010101;
+    color: whitesmoke;
     margin-bottom: 30px;
 }
 
 .services-items .service-item .projects {
     font-size: 12px;
-    color: #070707;
+    color: whitesmoke;
     text-transform: uppercase;
     display: inline-block;
 }
@@ -295,7 +352,7 @@ ul li {
 }
 
 .skills .skill .skill-inner {
-    border: 2px solid #565656;
+    border: 2px solid whitesmoke;
     border-radius: 85px;
     padding: 54px 0 48px 0;
     margin-bottom: 20px;
@@ -309,14 +366,14 @@ ul li {
 
 .skills .skill .skill-inner h1 {
     font-size: 30px;
-    color: black;
+    color: whitesmoke;
     font-weight: 300;
     margin: 0;
 }
 
 .skills .skill p {
     font-size: 14px;
-    color: #070707;
+    color: whitesmoke;
     margin: 0;
 }
 
@@ -400,10 +457,3 @@ ul li {
 
 
 /* ################################################ */
-
-.contact {
-    background-color: tomato;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-}
