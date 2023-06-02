@@ -22,6 +22,17 @@ body {
     background-color: black;
     color: whitesmoke;
 }
+.video{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    opacity: 0.2;
+}
 
 /* ################################################ */
 /* seccion card */
@@ -457,3 +468,11 @@ body {
 
 
 /* ################################################ */
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    margin: 0rem auto;
+}
