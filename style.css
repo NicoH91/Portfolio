@@ -415,7 +415,9 @@ display: none;
     color: whitesmoke;
     margin: 0;
 }
-
+.skill-inner:hover{
+    transform: scale(0.9);
+}
 
 
 /* ################################################ */
@@ -508,10 +510,11 @@ display: none;
     max-width: 500px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #f9f9f993;
-    border: 1px solid #ccc;
+    background-color: #f9f9f900;
+    border: 1px solid #cccccc00;
     border-radius: 5px;
     font-family: Arial, sans-serif;
+    color: rgb(255, 255, 255);
 }
 
 .input-group {
@@ -529,7 +532,7 @@ input[type="email"],
 textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #0d0d0d;
+    border: 1px solid #0d0d0d00;
     border-radius: 5px;
     font-size: 16px;
 }
@@ -539,11 +542,15 @@ textarea {
 }
 
 .theme-btn {
-    background-color: #4CAF50;
-    color: rgb(8, 8, 8);
+    background-color: #28e98c;
+    color: rgb(253, 253, 253);
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+}
+.theme-btn:hover{
+    background: black;
+    color: white;
 }
