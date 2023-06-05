@@ -371,6 +371,11 @@ display: none;
 
 
 /* ################################################ */
+/* @media (max-width:970px) {
+    .skill-inner{
+     
+    }
+} */
 .skills-area {
     padding-top: 90px;
     padding-bottom: 40px;
@@ -393,8 +398,8 @@ display: none;
 .skills .skill .skill-inner {
     border: 2px solid whitesmoke;
     border-radius: 85px;
-    padding: 50px 0 48px 0;
-    margin-bottom: 20px;
+    padding: 20px 0 15px 0;
+
     transition: .3s;
 }
 
