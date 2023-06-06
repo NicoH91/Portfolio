@@ -6,7 +6,7 @@
 
 a {
     text-decoration: none;
-    color:  #28e98c;
+    color: #28e98c;
 }
 
 ul li {
@@ -21,6 +21,12 @@ h5 {
 body {
     background-color: black;
     color: whitesmoke;
+}
+
+header,
+main {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .video {
@@ -44,7 +50,7 @@ body {
 /* seccion card */
 @media (max-width:970px) {
     .divnavbar {
-        position: static; 
+        position: static;
         display: none;
     }
 
@@ -55,7 +61,7 @@ body {
     } */
 
     .card {
-display: none;
+        display: none;
 
     }
 }
@@ -77,13 +83,13 @@ display: none;
     position: fixed;
     right: 0;
     z-index: 1030;
-   
+
 }
 
 .divnavbar .navbar {
     font-size: 1.4rem;
     display: flex;
-        justify-content: space-evenly;
+    justify-content: space-evenly;
 
 
 
@@ -142,7 +148,8 @@ display: none;
 }
 
 .btn:hover {
-    background-color: #3988c8;
+    background-color: #040404;
+    color:#f3f6f4 ;
 }
 
 .titulo {
@@ -421,12 +428,17 @@ display: none;
     color: whitesmoke;
     margin: 0;
 }
-.skill-inner:hover{
+
+.skill-inner:hover {
     transform: scale(0.9);
 }
 
 
 /* ################################################ */
+.portfolio-area img {
+    max-width: 100%;
+    height: auto;
+}
 
 .portfolio-area {
     padding-top: 90px;
@@ -556,7 +568,8 @@ textarea {
     font-size: 16px;
     cursor: pointer;
 }
-.theme-btn:hover{
+
+.theme-btn:hover {
     background: black;
     color: white;
 }
