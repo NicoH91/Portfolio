@@ -40,7 +40,12 @@ main {
     z-index: -1;
     opacity: 0.2;
 }
-
+.aref{
+   color: #28e98c; 
+}
+.aref:hover{
+    color: white;
+}
 .color__letter {
     color: #28e98c;
     margin-left: 0.5rem;
@@ -51,7 +56,7 @@ main {
 @media (max-width:970px) {
     .divnavbar {
         position: static;
-        display: none;
+       
     }
 
     /* .ham {
